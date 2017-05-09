@@ -21,7 +21,7 @@ $("#fade").on('click', function(event){
 
 var form = document.querySelector("#my-sample-form");
 var submit = document.querySelector("input[type=\"submit\"]");
-braintree.client.create({authorization: "<?php echo $clientToken ?>"}, function (err, clientInstance) {
+braintree.client.create({authorization: $('#my-sample-form').data('token')}, function (err, clientInstance) {
     if (err) {
         console.error(err);
         return;

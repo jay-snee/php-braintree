@@ -15,7 +15,7 @@
 ?>
 
 <!DOCTYPE html>
-<html >
+<html>
     <head>
         <meta charset="UTF-8">
         <title>Hosted fields v3 3D Secure</title>
@@ -92,7 +92,7 @@
                 <h1>Payment Method</h1>
             </header>
 
-            <form id="my-sample-form" class="scale-down">
+            <form id="my-sample-form" class="scale-down" data-token='<?php echo $clientToken; ?>'>
                 <div class="cardinfo-card-number">
                     <label class="cardinfo-label" for="card-number">Card Number</label>
                     <div class='input-wrapper' id="card-number"></div>
