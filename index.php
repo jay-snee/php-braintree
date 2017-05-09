@@ -23,7 +23,7 @@
         $clientToken = Braintree_ClientToken::generate();
         
         if (!isset($_SERVER['HTTPS'])){
-            header('Location: https://localhost/Braintree/index.php');
+            header('Location: https://www.conquermaths.com/signup-bt/git/index.php');
             //echo "not secure";
         }else{
             //echo "secure";
