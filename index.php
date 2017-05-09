@@ -6,10 +6,10 @@
         header('Location: https://www.conquermaths.com/signup-bt/git/index.php');
     }
   
-    Braintree_Configuration::environment('sandbox');
-    Braintree_Configuration::merchantId('83cr4qfg7cpdm32v');
-    Braintree_Configuration::publicKey('hfmqcdgkrxxb4b6w');
-    Braintree_Configuration::privateKey('9a58840d9a2f377d3ce31557dbbedc87');
+    Braintree_Configuration::environment($_ENV['BRAINTREE_ENV']);
+    Braintree_Configuration::merchantId($_ENV['BRAINTREE_MERCHANT_ID']);
+    Braintree_Configuration::publicKey($_ENV['BRAINTREE_PUBLIC_KEY']);
+    Braintree_Configuration::privateKey($_ENV['BRAINTREE_PRIVATE_KEY']);
 
     $clientToken = Braintree_ClientToken::generate();
 ?>
