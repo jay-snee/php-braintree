@@ -500,6 +500,7 @@
             <br><br>
 
         </form>
+        
         <div class="form-container">
             <header>
                 <h1>Payment Method</h1>
@@ -545,9 +546,7 @@
         <!-- Load the 3D Secure component. -->
         <script src="https://js.braintreegateway.com/web/3.6.0/js/three-d-secure.min.js"></script>
 
-        <script src="//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-58d22c749295bca52f487966e382a94a495ac103faca9206cbd160bdf8aedf2a.js"></script>
-
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js'></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 
         <script>
             var form = document.querySelector('#my-sample-form');
@@ -636,7 +635,6 @@
                                 console.error(err);
                                 return;
                             }
-                            var nonce = payload.nonce;
 
                             // To enable 3D-Secure:
                             // Comment the following lines
