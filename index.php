@@ -683,6 +683,7 @@
                                 }
 
                         	    nonce = payload.nonce;
+                                console.log(nonce);
                                 document.getElementById("nonce").value = nonce;
                                 //document.getElementById("submitForm").submit();
                                 });
