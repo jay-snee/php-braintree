@@ -636,6 +636,7 @@
                                 console.error(err);
                                 return;
                             }
+                            var nonce = payload.nonce;
 
                             // To enable 3D-Secure:
                             // Comment the following lines
